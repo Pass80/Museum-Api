@@ -45,7 +45,6 @@ const fetchPages = (url) => {
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 nextPage = data.info.next;
                 previousPage = data.info.prev;
                 currentPage.innerHTML = data.info.page;
@@ -72,7 +71,6 @@ leftBtn.addEventListener('click', () => {
 century.addEventListener('change', () => {
     searchTerm = searchTxt.value;
     selectedCentury = century.value;
-    console.log(century.value);
     getSearchResults(searchTerm, selectedClassification, selectedCentury);
 });
 
@@ -129,7 +127,6 @@ const getSearchResults = (query = '', category = '', century = '') => {
             generateGalleryObjects(data);
             currentPage.innerHTML = data.info.page;
             nextPage = data.info.next;
-            console.log(data);
         });
 };
 
