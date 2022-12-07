@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <form onsubmit="return false">
+                <input type="text" id="search-txt" /><input
+                    type="submit"
+                    value="search"
+                    id="search-btn"
+                />
+            </form>
+        </header>
+        <section>
+            <aside>
+                <ul class="classification">
+                    <h2>Classification</h2>
+                </ul>
+
+                <label for="century">Century</label>
+                <select name="century" id="century"></select>
+            </aside>
+            <article></article>
+        </section>
+        <section class="pagination-container">
+            <div class="pagination">
+                <button class="btn btn--left">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="left"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5"
+                        />
+                    </svg>
+                </button>
+                <a href="#" class="number">1</a>
+                <button class="btn btn--right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="right"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <script src="assets/main/main.js"></script>
+    </body>
+</html>
